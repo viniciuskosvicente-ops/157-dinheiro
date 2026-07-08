@@ -1,154 +1,391 @@
+/*=============================
+GAMESTORE CSS
+Autor: ChatGPT
+==============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-
+html{
+    scroll-behavior:smooth;
 }
 
 body{
 
-background:#111;
-color:white;
+    background:#070707;
+
+    color:#fff;
+
+    overflow-x:hidden;
 
 }
+
+/* Scroll */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#7b2cff;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#00bfff;
+}
+
+/* HEADER */
 
 header{
 
-display:flex;
-justify-content:space-between;
-padding:20px;
-background:#000;
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:rgba(0,0,0,.75);
+
+    backdrop-filter:blur(20px);
+
+    z-index:999;
+
+    border-bottom:1px solid rgba(123,44,255,.35);
 
 }
 
-header h1{
+.logo{
 
-color:#00ffcc;
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#7b2cff;
+
+    text-shadow:0 0 20px #7b2cff;
 
 }
 
-input{
+nav{
 
-padding:10px;
-width:250px;
+    display:flex;
+
+    gap:25px;
 
 }
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:17px;
+
+}
+
+nav a:hover{
+
+    color:#00bfff;
+
+}
+
+/* Banner */
 
 .banner{
 
-height:300px;
+    width:100%;
 
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
+    height:100vh;
 
-background:linear-gradient(90deg,#00f,#0ff);
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+    url(img/banner.jpg);
+
+    background-size:cover;
+
+    background-position:center;
 
 }
 
-.banner h2{
+.banner h1{
 
-font-size:50px;
+    font-size:65px;
+
+    margin-bottom:20px;
 
 }
+
+.banner p{
+
+    font-size:22px;
+
+    color:#ddd;
+
+    margin-bottom:35px;
+
+}
+
+.banner button{
+
+    background:#7b2cff;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 45px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.4s;
+
+}
+
+.banner button:hover{
+
+    transform:scale(1.08);
+
+    background:#00bfff;
+
+    box-shadow:0 0 35px #00bfff;
+
+}
+
+/* TITULOS */
+
+.titulo{
+
+    text-align:center;
+
+    margin-top:70px;
+
+    margin-bottom:40px;
+
+    font-size:40px;
+
+}
+
+/* PRODUTOS */
 
 .produtos{
 
-display:grid;
+    width:90%;
 
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    margin:auto;
 
-gap:30px;
+    display:grid;
 
-padding:40px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:35px;
+
+    margin-bottom:80px;
 
 }
 
 .card{
 
-background:#1e1e1e;
+    background:#121212;
 
-border-radius:15px;
+    border-radius:20px;
 
-padding:20px;
+    overflow:hidden;
 
-text-align:center;
+    transition:.4s;
 
-transition:.3s;
+    border:1px solid #252525;
 
 }
 
 .card:hover{
 
-transform:scale(1.05);
+    transform:translateY(-10px);
 
-box-shadow:0 0 20px cyan;
+    border-color:#7b2cff;
+
+    box-shadow:0 0 35px rgba(123,44,255,.6);
 
 }
 
 .card img{
 
-width:100%;
+    width:100%;
 
-height:180px;
+    height:220px;
 
-object-fit:cover;
-
-border-radius:10px;
+    object-fit:cover;
 
 }
 
-button{
+.card h3{
 
-margin-top:15px;
+    margin:18px;
 
-padding:12px;
+    font-size:24px;
 
-width:100%;
+}
 
-background:#00ffcc;
+.card p{
 
-border:none;
+    margin:18px;
 
-cursor:pointer;
+    color:#bcbcbc;
+
+}
+
+.card span{
+
+    display:block;
+
+    margin:18px;
+
+    color:#00ff99;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+.card button{
+
+    width:calc(100% - 36px);
+
+    margin:18px;
+
+    border:none;
+
+    background:#7b2cff;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:#00bfff;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#050505;
+
+    padding:35px;
+
+    text-align:center;
+
+    color:#aaa;
+
+    border-top:1px solid #222;
+
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+.banner h1{
+
+font-size:42px;
+
+}
+
+.banner p{
 
 font-size:18px;
 
 }
 
-button:hover{
+header{
 
-background:#00ccaa;
+padding:15px;
 
 }
 
-#carrinho{
+nav{
 
-position:fixed;
+gap:12px;
 
-right:20px;
+}
 
-bottom:20px;
+.logo{
 
-background:#000;
+font-size:24px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+nav{
+
+display:none;
+
+}
+
+.banner h1{
+
+font-size:32px;
+
+}
+
+.banner{
 
 padding:20px;
 
-border-radius:15px;
-
 }
 
-footer{
+.titulo{
 
-padding:30px;
+font-size:28px;
 
-text-align:center;
-
-background:#000;
-
-margin-top:40px;
+}
 
 }
