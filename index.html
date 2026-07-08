@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GameStore</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>GAME STORE</h1>
+
+<input id="pesquisa" placeholder="Pesquisar...">
+
+</header>
+
+<section class="banner">
+
+<h2>As melhores ofertas</h2>
+
+<p>Diamantes • Gemas • Coins • Jogos</p>
+
+</section>
+
+<section class="produtos" id="produtos">
+
+<div class="card">
+
+<img src="img/freefire.jpg">
+
+<h3>Free Fire</h3>
+
+<p>530 Diamantes</p>
+
+<span>R$29,90</span>
+
+<button onclick="comprar('530 Diamantes')">
+
+Comprar
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/roblox.jpg">
+
+<h3>Roblox</h3>
+
+<p>800 Robux</p>
+
+<span>R$49,90</span>
+
+<button onclick="comprar('800 Robux')">
+
+Comprar
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/gta.jpg">
+
+<h3>GTA Online</h3>
+
+<p>Dinheiro</p>
+
+<span>R$39,90</span>
+
+<button onclick="comprar('Dinheiro GTA')">
+
+Comprar
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/minecraft.jpg">
+
+<h3>Minecraft</h3>
+
+<p>Java Edition</p>
+
+<span>R$89,90</span>
+
+<button onclick="comprar('Minecraft')">
+
+Comprar
+
+</button>
+
+</div>
+
+</section>
+
+<div id="carrinho">
+
+Itens:
+
+<span id="itens">
+
+0
+
+</span>
+
+</div>
+
+<footer>
+
+<p>© Game Store 2026</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
