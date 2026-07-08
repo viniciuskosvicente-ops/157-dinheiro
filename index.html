@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GameStore</title>
+<title>GameStore - Loja Gamer</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4ad7d9d79d.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -16,116 +21,157 @@
 
 <header>
 
-<h1>GAME STORE</h1>
+<div class="logo">
+🎮 GameStore
+</div>
 
-<input id="pesquisa" placeholder="Pesquisar...">
+<nav>
+
+<a href="#">Início</a>
+
+<a href="#">Jogos</a>
+
+<a href="#">Promoções</a>
+
+<a href="#">Contato</a>
+
+<a href="pages/login.html">
+<i class="fa-solid fa-user"></i>
+</a>
+
+</nav>
 
 </header>
 
 <section class="banner">
 
-<h2>As melhores ofertas</h2>
+<div class="banner-text">
 
-<p>Diamantes • Gemas • Coins • Jogos</p>
+<h1>Recargas para seus jogos favoritos</h1>
+
+<p>Compre Gemas, Diamantes, Moedas e Passes com segurança.</p>
+
+<button>Comprar Agora</button>
+
+</div>
 
 </section>
 
-<section class="produtos" id="produtos">
+<h2 class="titulo">
+Jogos Populares
+</h2>
+
+<section class="produtos">
 
 <div class="card">
 
-<img src="img/freefire.jpg">
+<img src="img/freefire.png">
 
 <h3>Free Fire</h3>
 
-<p>530 Diamantes</p>
+<p>Diamantes</p>
 
-<span>R$29,90</span>
+<span>R$ 9,90</span>
 
-<button onclick="comprar('530 Diamantes')">
-
+<button onclick="comprar('Free Fire')">
 Comprar
-
 </button>
 
 </div>
 
 <div class="card">
 
-<img src="img/roblox.jpg">
+<img src="img/roblox.png">
 
 <h3>Roblox</h3>
 
-<p>800 Robux</p>
+<p>Robux</p>
 
-<span>R$49,90</span>
+<span>R$ 24,90</span>
 
-<button onclick="comprar('800 Robux')">
-
+<button onclick="comprar('Roblox')">
 Comprar
-
 </button>
 
 </div>
 
 <div class="card">
 
-<img src="img/gta.jpg">
+<img src="img/brawl.png">
 
-<h3>GTA Online</h3>
+<h3>Brawl Stars</h3>
 
-<p>Dinheiro</p>
+<p>Gemas</p>
 
-<span>R$39,90</span>
+<span>R$ 14,90</span>
 
-<button onclick="comprar('Dinheiro GTA')">
-
+<button onclick="comprar('Brawl Stars')">
 Comprar
-
 </button>
 
 </div>
 
 <div class="card">
 
-<img src="img/minecraft.jpg">
+<img src="img/clash.png">
 
-<h3>Minecraft</h3>
+<h3>Clash Royale</h3>
 
-<p>Java Edition</p>
+<p>Gemas</p>
 
-<span>R$89,90</span>
+<span>R$ 29,90</span>
 
-<button onclick="comprar('Minecraft')">
-
+<button onclick="comprar('Clash Royale')">
 Comprar
+</button>
 
+</div>
+
+<div class="card">
+
+<img src="img/cod.png">
+
+<h3>COD Mobile</h3>
+
+<p>CP</p>
+
+<span>R$ 19,90</span>
+
+<button onclick="comprar('COD Mobile')">
+Comprar
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/fcmobile.png">
+
+<h3>EA FC Mobile</h3>
+
+<p>FC Points</p>
+
+<span>R$ 39,90</span>
+
+<button onclick="comprar('EA FC Mobile')">
+Comprar
 </button>
 
 </div>
 
 </section>
 
-<div id="carrinho">
-
-Itens:
-
-<span id="itens">
-
-0
-
-</span>
-
-</div>
-
 <footer>
 
-<p>© Game Store 2026</p>
+<p>
+
+© 2026 GameStore
+
+</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
